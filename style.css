@@ -10,17 +10,8 @@ nav {
     padding-top: 0.5em;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(58,145,255,1) 50%, rgba(0,0,0,1) 100%);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-}
-
-.topnav {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 60fr 40fr;
-    grid-column-gap: 5em;
-    padding-top: 1.5em;
-
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .navButtons {
@@ -31,11 +22,14 @@ nav {
     color: black;
 }
 
+#logo {
+    height: 24em;
+    width: 24em;
+}
+
 header {
     display: grid;
     justify-items: center;
-    width: 100vw;
-    height: 1vh;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
