@@ -32,7 +32,7 @@ nav {
 }
 
 #logo {
-    margin-top: 4em; 
+    margin-top: 5em; 
     height: 14em;
     width: 14em;
     z-index: 5;
@@ -49,7 +49,7 @@ header {
 #slide1, #slide2, #slide3, #slide4 {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,6 +92,52 @@ header span {
     color: white;
     display: grid;
     justify-items: center;
+}
+
+#myBtn {
+    color: white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 3px 3px 4px rgb(222, 0, 252);
+    border-radius: 1em;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    background: rgb(0, 174, 255);
+    cursor: pointer;
+}
+
+#aboutInstructor {
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 3px 3px 4px rgb(222, 0, 252);
+    padding: 2em 14em 2em 14em;
+    background-image: url("GuitarBackground.jpeg");
+    background-size: cover;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 10em;
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.close {
+    color: white;
+    font-size: 2em;
+}
+
+.close:hover, .close:focus {
+    color: gold;
+    cursor: pointer;
 }
 
 @media (max-width: 720px) {
@@ -166,5 +212,14 @@ header span {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

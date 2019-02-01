@@ -3,7 +3,7 @@
         <title>WeeJamminPDX</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
     </head>
 
     <body>
@@ -27,9 +27,38 @@
         <section id="aboutSection">
             <p>Wee Jammin Music Lessons is a music program that offers a unique curriculum that allows
                 children to explore instruments, create music and jam with their peers.</p>
-        </section>
+                <button id="myBtn">About the Instructor</button>
+
+            </section>
+        <div id="myModal" class="modal">
+            <section id="aboutInstructor">
+                <h2>About the instructor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et tortor malesuada neque pharetra viverra. Integer pulvinar arcu sit amet lorem varius, et interdum eros condimentum. Duis erat nibh, feugiat et lorem sed, dignissim dictum justo. Suspendisse venenatis odio enim, quis porttitor metus imperdiet eu. Praesent ut est eget erat luctus dignissim sit amet vitae augue. Curabitur sollicitudin ligula id nulla fermentum scelerisque.</p>
+                <span class="close">&times;</span>
+            </section>
+        </div>
         <footer>
 
         </footer>
+
+        <script>
+            var modal = document.getElementById('myModal');
+            var btn = document.getElementById('myBtn');
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
