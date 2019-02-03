@@ -3,7 +3,7 @@
         <title>WeeJamminPDX</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lobster" rel="stylesheet">
     </head>
 
     <body>
@@ -24,16 +24,56 @@
             <div id="slide3"></div>
             <div id="slide4"></div>
         </header>
-        <section id="aboutSection">
-            <p>Wee Jammin Music Lessons is a music program that offers a unique curriculum that allows
-                children to explore instruments, create music and jam with their peers.</p>
-                <button id="myBtn">About the Instructor</button>
-
+        <!-- For section blocks, each section 
+            will be in blocks that are compiled on
+            top of each other, with different
+            background colors
+        -->
+        <section id="blockSection">
+            <section id="aboutSection" class="sections">
+                <h3>About</h3>
+                <p>Wee Jammin Music Lessons is a music program that offers a unique curriculum that allows
+                    children to explore instruments, create music and jam with their peers.
+                    <br/><br/>
+                    This program is designed primarily for children with autism and other related disorders; however, it is open to any child who is seeking a nontraditional approach to music.
+                </p>
+                    <button id="myBtn">From the Instructor</button>
             </section>
+            <section id="resourcesSection" class="sections">
+                <h3>Benefits of Music</h3>
+                <p>Music is a universal language that has been proven to help with listening skills, patience, concentration, memory, cognition, fine/gross motor skills and sensory integration/regulation are just to name a few.</p>
+                    <button id="myBtn">More resources</button>
+            </section>
+            <section id="reviewSection" class="sections">
+                <h3>Reviews</h3>
+                    <p>Muse is a wonderful teacher! I highly recommend 4/4 Rhythm Music!<br>
+                    <span>- A happy parent</span>
+                    </p>
+                    <br>
+                    <p>My daughter is eager to learn from Muse! I'm happy she's learning so much!<br>
+                    <span>- Another happy parent</span>
+                    </p>
+            </section>
+            <section id="pricingSection" class="sections">
+                <h3>Pricing</h3>
+                <p>-Free 30 minute introductory lesson for new students
+                    <br/>
+                    -New student trial pack, 4, 1 hour lessons for $140
+                    <br/>
+                    -Lessons at Backbeat Academy are monthly 4-5 lessons for $180
+                    <br/>
+                    -Wee Jammin Lesson Bundle- 8, 1 hour lessons for $280
+                    <br/>
+                    - single 1 hour lesson $40
+                    <br/>
+                    -$20 off lesson bundle when you refer a new student who enrolls in a bundle
+                    <br/>
+                    -some home lessons may be subject to price increase due to distance of travel</p>
+            </section>
+        </section> 
         <div id="myModal" class="modal">
             <section id="aboutInstructor">
-                <h2>About the instructor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et tortor malesuada neque pharetra viverra. Integer pulvinar arcu sit amet lorem varius, et interdum eros condimentum. Duis erat nibh, feugiat et lorem sed, dignissim dictum justo. Suspendisse venenatis odio enim, quis porttitor metus imperdiet eu. Praesent ut est eget erat luctus dignissim sit amet vitae augue. Curabitur sollicitudin ligula id nulla fermentum scelerisque.</p>
+                <p>I have worked in early childhood education for the past 15 years in a plethora of different forms including summer camps, special education, swim lessons, teaching art and music and most recently, behavior therapy for children with autism.  I see there is a need for more extra curricular activities for children with special needs.  Those that learn differently, often need to be taught differently.  I believe all children deserve a chance at exploring their creative talents, discovering an effective outlet for their emotions/feelings and broadening their skills of communication and socialization through music.</p>
                 <span class="close">&times;</span>
             </section>
         </div>
