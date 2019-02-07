@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    transition-timing-function: ease-out;
+}
+
 body {
     margin: 0 auto;
     background: black;
@@ -88,8 +93,12 @@ header h1 {
     transform: skewY(-4deg);
 }
 
-header span {
+#secondRow {
     font-size: 0.7em;
+}
+
+#thirdRow {
+    font-size: 0.3em;
 }
 
 #blockSection {
@@ -126,14 +135,16 @@ header span {
 }
 
 #reviewSection {
+    max-height: 62vh;
     color: black;
     font-size: 1.5em;
     background: linear-gradient(0deg, rgba(7,101,133,1) 0%, rgba(255,255,255,1) 100%);
+    overflow-y: auto;
 }
 
 #pricingSection {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background: linear-gradient(0deg, rgba(151,150,240,1) 0%, rgba(251,199,212,1) 100%);
 }
 
