@@ -13,8 +13,8 @@
             <a id="resources" class="navButtons" href="#resourcesSection">Resources</a>
             <a id="reviews" class="navButtons" href="#reviewSection">Reviews</a>
             <a id="pricing" class="navButtons" href="#pricingSection">Pricing</a>
-            <a id="comingSoon" class="navButtons" href="#">Coming Soon</a>
-        </nav>
+            <a id="comingSoon" class="navButtons" href="#comingSoonSection">Coming Soon</a>
+        </nav>        
         <header id="header">
             <img id="logo" src="Logo.png">
             <h1>Wee Jammin'<br>
@@ -26,11 +26,6 @@
             <div id="slide3"></div>
             <div id="slide4"></div>
         </header>
-        <!-- For section blocks, each section 
-            will be in blocks that are compiled on
-            top of each other, with different
-            background colors
-        -->
         <section id="blockSection">
             <section id="aboutSection" class="sections">
                 <h3>About</h3>
@@ -39,7 +34,6 @@
                     <br/><br/>
                     This program is designed primarily for children with autism and other related disorders; however, it is open to any child who is seeking a nontraditional approach to music.
                 </p>
-                    <button id="myBtn" class="buttons">From the Instructor</button>
             </section>
             <section id="resourcesSection" class="sections">
                 <h3>Benefits of Music</h3>
@@ -57,42 +51,58 @@
                 </p>
                     <button id="myBtn" class="buttons">More resources</button>
             </section>
+            <section id="comingSoonSection" class="sections">
+                    <h3>What's Coming Soon!</h3>
+                    <p>Music Camp:<br>
+                    Stay in tune for an awesome 5 day music camp, providing 3 hours of fun and exciting 
+                    activities to keep the kids busy while on school breaks.</p>
+                    <p>Activities include:
+                            <br>instrument exploration
+                            
+                            <br>small group jams
+                            
+                            <br>music related art projects
+                            
+                            <br>dancing and games</p>
+
+                    <p>Music Bus:<br>
+                    Envision a music studio space on a bus that can 
+                    arrive at the child’s home, school or wherever is 
+                    most convenient. The bus will be designed with your 
+                    child in mind. A clean and classy exterior and an 
+                    awesome kid friendly music space inside. The bus 
+                    will be exciting, fun, comfortable, and safe for kids. 
+                    The bus drives to the planned location and stays parked 
+                    during the lesson. The bus will not transport students.</p>
+            </section>
+            <section id="pricingSection" class="sections">
+                <h3>Pricing</h3>
+                <p>New student lessons Four Pack, 1 hour lessons for $140
+                    <br><br>
+                    Wee Jammin lessons - Eight Pack, 1 hour lessons for $280
+                    <br><br>
+                    Single 1 hour lesson $40 (1/2 hour -$20)
+                    <br><br>
+                    Free 30 minute introductory lesson for new students
+                    <br><br>
+                    <h3>Backbeat Music Academy: (SW Portland)</h3>
+                    Small groups exploring instruments together $110 monthly (1 hour)
+                    <br><br>
+                    private lessons for $280 monthly (1 hour)
+                    <br><br>
+                    Tell a friend...$20 off your next lesson pack when you refer a new student who enrolls in a bundle 
+                    <br><br>
+                    *Some home lessons may be subject to price increase due to distance of travel
+            </section>
+        </section>
+        <div id="myModal" class="modal">
             <section id="reviewSection" class="sections">
                 <h3>Reviews</h3>
                     <p>Our autistic son loves music, but we struggled to find classes that were a good fit for him.  They were either too basic and focused on music appreciation or too intense of a schedule.  Wee Jammin’ music lessons and Donnia are a perfect fit.  Donnia plays a variety of instruments and is a wonderful teacher with her years of working with kiddos.  She introduced our son to a variety of instruments, and follows his lead and interest to learn songs that he loves.  She is teaching him how to read music, tempo, rhythm, etc.  This is such a great concept and business, to allow kids that need more supports access to extracurricular activities of their peers.  I highly recommend Wee Jammin’ music lessons to anyone with a music loving kiddo that wants to explore that interest and foster a life long skill of playing an instrument.
                     <br>
                         <span>- Jen</span>
                     </p>
-            </section>
-            <section id="pricingSection" class="sections">
-                <h3>Pricing</h3>
-                <p>-New student lessons Four Pack, 1 hour lessons for $140
-                    <br><br>
-                    -Wee Jammin lessons- Eight Pack, 1 hour lessons for $280
-                    <br><br>
-                    -Single 1 hour lesson $40 (1/2 hour -$20)
-                    <br><br>
-                    -Free 30 minute introductory lesson for new students
-                    <br><br>
-                    <h3>Backbeat Music Academy: (SW Portland)</h3>
-                    <br>
-                    -Small groups exploring instruments together $110 monthly (1 hour)
-                    <br><br>
-                    - private lessons for $280 monthly (1 hour)
-                    <br><br>
-                    -Tell a friend...$20 off your next lesson pack when you refer a new student who enrolls in a bundle 
-                    <br><br>
-                    *Some home lessons may be subject to price increase due to distance of travel
-            </section>
-            <section id="ComingSoonSection" class="sections">
-                <h3>Coming Soon</h3>
-                <p></p>
-            </section>
-        </section> 
-        <div id="myModal" class="modal">
-            <section id="aboutInstructor">
-                <p>I have worked in early childhood education for the past 15 years in a plethora of different forms including summer camps, special education, swim lessons, teaching art and music and most recently, behavior therapy for children with autism.  I see there is a need for more extra curricular activities for children with special needs.  Those that learn differently, often need to be taught differently.  I believe all children deserve a chance at exploring their creative talents, discovering an effective outlet for their emotions/feelings and broadening their skills of communication and socialization through music.</p>
-                <span class="close">&times;</span>
+                    <span class="close">&times;</span>
             </section>
         </div>
         <footer>
@@ -101,7 +111,7 @@
 
         <script>
             var modal = document.getElementById('myModal');
-            var btn = document.getElementById('myBtn');
+            var btn = document.getElementById('reviews');
             var span = document.getElementsByClassName("close")[0];
 
             btn.onclick = function() {
