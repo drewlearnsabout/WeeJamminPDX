@@ -108,7 +108,8 @@ header h1 {
 }
 
 #blockSection h3 {
-    font-style: italic;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
 }
 
 .sections {
@@ -122,7 +123,7 @@ header h1 {
     color: white;
     background: linear-gradient(0deg, rgba(204,43,94,1) 0%, rgba(117,58,136,1) 100%);
     margin: 4em 0 2em 0;
-    padding: 8em 6em 8em 6em;
+    padding: 14em 6em 14em 6em;
 }
 
 #aboutSection p {
