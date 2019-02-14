@@ -122,7 +122,7 @@ header h1 {
     color: white;
     background: linear-gradient(0deg, rgba(204,43,94,1) 0%, rgba(117,58,136,1) 100%);
     margin: 4em 0 2em 0;
-    padding: 2em 8em 2em 8em;
+    padding: 8em 6em 8em 6em;
 }
 
 #aboutSection p {
@@ -139,6 +139,7 @@ header h1 {
     font-weight: bold;
     background: linear-gradient(0deg, rgba(2,170,176,1) 0%, rgba(0,205,172,1) 100%);
     font-size: 2em;
+    padding: 3em 0 3em 0;
 }
 
 #resourcesSection h3 {
