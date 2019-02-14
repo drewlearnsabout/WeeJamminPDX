@@ -6,7 +6,7 @@ html {
 body {
     margin: 0 auto;
     background: white;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Fredericka the Great', cursive;
     overflow-x: hidden;
 }
 
@@ -25,7 +25,7 @@ nav {
 
 .navButtons {
     padding-top: 0.7em;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Josefin Slab', serif;
     font-size: 1.5em;
     font-weight: bold;
     text-shadow: 2px 2px 2px rgb(0, 0, 0), 2px 2px 5px rgb(255, 255, 255);
@@ -90,13 +90,13 @@ header {
 }
 
 header h1 {
-    color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px rgb(0, 0, 0), 3px 3px 4px rgb(222, 0, 252);
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 3px 3px 4px rgb(222, 0, 252), 3px 3px 4px white;
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     z-index: 5;
-    transform: skewY(-4deg);
 }
 
 #secondRow {
@@ -107,15 +107,6 @@ header h1 {
     font-size: 0.3em;
 }
 
-#blockSection {
-    width: 96vw;
-    display: grid;
-    grid-gap: 1em;
-    margin: 1em 1em 0 1em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
-}
-
 #blockSection h3 {
     font-style: italic;
 }
@@ -123,32 +114,31 @@ header h1 {
 .sections {
     padding: 1.5em;
     text-align: center;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Josefin Slab', serif;
     box-shadow: 5px 5px 5px gray;
 }
 
 #aboutSection {
     color: white;
     background: linear-gradient(0deg, rgba(204,43,94,1) 0%, rgba(117,58,136,1) 100%);
-    grid-area: 1 / 1 / 3 / 2;
-    padding-top: 10em;
+    margin: 4em 0 2em 0;
+    padding: 2em 8em 2em 8em;
 }
 
 #aboutSection p {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 #aboutSection h3 {
     color: black;
-    font-size: 1.7em;
+    font-size: 2em;
 }
 
 #resourcesSection {
     color: white;
     font-weight: bold;
     background: linear-gradient(0deg, rgba(2,170,176,1) 0%, rgba(0,205,172,1) 100%);
-    font-size: 1.3em;
-    grid-area: 2 / 2 / 3 / 4;
+    font-size: 2em;
 }
 
 #resourcesSection h3 {
@@ -156,7 +146,8 @@ header h1 {
 }
 
 #reviewSection {
-    padding: 0 8em 0 8em;
+    padding: 1em 8em 0 8em;
+    height: 70vh;
     color: white;
     font-size: 1.5em;
     background: url("GuitarBackground.jpeg");
@@ -169,7 +160,9 @@ header h1 {
 
 #comingSoonSection {
     color: white;
-    background: linear-gradient(0deg, rgba(7,101,133,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 100%);
+    margin: 4em 0 4em 0;
+    font-size: 2em;
 }
 
 #comingSoonSection h3 {
@@ -178,7 +171,8 @@ header h1 {
 
 #pricingSection {
     color: white;
-    padding: 1em 0.7em 0 0.7em;
+    margin: 4em 0 4em 0;
+    padding: 2em 0 2em 0;
     font-weight: bold;
     font-size: 1em;
     background: linear-gradient(0deg, rgba(151,150,240,1) 0%, rgba(251,199,212,1) 100%);
@@ -186,11 +180,17 @@ header h1 {
 
 #pricingSection h3 {
     color: black;
+    font-size: 2em;
+}
+
+#pricingSection p {
+    font-size: 1.8em;
 }
 
 #contactSection {
     margin-top: 1.5em;
     padding: 1em 0 1em 0;
+    font-size: 1.5em;
     background: rgb(102, 102, 102);
     color: white;
     display: grid;
@@ -199,9 +199,13 @@ header h1 {
 }
 
 #contactSection img {
-    height: 2.2em;
+    height: 1.8em;
     background: white;
     border-radius: 2em;
+}
+
+#locations {
+    font-size: 0.8em;
 }
 
 #bottomFooter {
@@ -211,14 +215,57 @@ header h1 {
     text-align: center;
 }
 
+.picGrids {
+    margin: 4em 0 4em 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.picGrids img {
+    width: 100%;
+}
+
+/* ------  | 1 | 2 | 3 | 4 | 5 |   
+
+-
+1
+-
+2
+-
+3
+-
+4
+-
+
+----- */
+
+#pic1 {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+#pic2 {
+    height: 100%;
+    grid-area: 1 / 4  / 3 / 6;
+}
+
+#pic3 {
+    height: 100%;
+    grid-area: 3 / 1 / 6 / 3;
+}
+
+#pic4 {
+    grid-area: 3 / 3 / 6 / 6;
+}
+
 .buttons {
     padding: 0.4em;
     color: gold;
     text-shadow: 2px 2px 3px rgb(0, 0, 0), 3px 3px 4px rgb(222, 0, 252);
     border-radius: 1em;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Josefin Slab', serif;
     background: linear-gradient(129deg, rgba(172,182,229,1) 0%, rgba(134,253,232,1) 100%);
     cursor: pointer;
 }
@@ -230,7 +277,6 @@ header h1 {
     left: 0;
     top: 6em;
     width: 100vw;
-    height: 70vh;
     overflow-y: auto;
     text-align: center;
 }
