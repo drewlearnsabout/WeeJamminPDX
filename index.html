@@ -2,17 +2,17 @@
     <head>
         <title>WeeJamminPDX</title>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">    </head>
 
     <body>
         <nav id="navbar" class="topnav">
             <a id="home" class="navButtons" href="#header">Home</a>
             <a id="about" class="navButtons" href="#aboutSection">Mission</a>
-            <a id="resources" class="navButtons" href="#resourcesSection">Resources</a>
+            <a id="resources" class="navButtons" href="#resourcesSection">Benefits/Resources</a>
             <a id="reviews" class="navButtons" href="#reviewSection">Reviews</a>
             <a id="comingSoon" class="navButtons" href="#comingSoonSection">Coming Soon</a>
             <a id="pricing" class="navButtons" href="#pricingSection">Pricing</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="hamburger button.png" class="icon"></a>
         </nav>        
         <header id="header">
             <img id="logo" src="Logo.png">
@@ -28,11 +28,14 @@
         <section id="blockSection">
             <section id="aboutSection" class="sections">
                 <h3>Mission</h3>
-                <p>Wee Jammin Music Lessons is a music program that offers a unique curriculum that allows
-                    <br>children to explore instruments, create music and jam with their peers.
-                    <br/><br/>
-                    This program is designed primarily for children with autism and other related disorders;<br> however, it is open to any child who is seeking a nontraditional approach to music.
-                </p>
+                <div class="twoParts">
+                    <p>Wee Jammin Music Lessons is a music program that offers a unique curriculum that allows
+                        children to explore instruments, create music and jam with their peers.
+                    </p>
+                    <p>
+                        This program is designed primarily for children with autism and other related disorders; however, it is open to any child who is seeking a nontraditional approach to music.
+                    </p>
+                </div>
             </section>
             <section id="picGrid1" class="picGrids">
                 <img id="pic1" src="grid pic 1.jpeg">
@@ -64,8 +67,10 @@
             </section>
             <section id="comingSoonSection" class="sections">
                     <h3>What's Coming Soon!</h3>
-                    <p>Music Camp:<br>
-                    Stay in tune for an awesome 5 day music camp, providing 3 hours of fun and exciting 
+                    <div class="twoParts">
+                    <div>
+                        <p>Music Camp:<br>
+                    Stay tuned for an awesome 5 day music camp, providing 3 hours of fun and exciting 
                     activities to keep the kids busy while on school breaks.</p>
                     <p>Activities include:
                             <br>- instrument exploration
@@ -75,7 +80,7 @@
                             <br>- music related art projects
                             
                             <br>- dancing and games</p>
-
+                        </div>
                     <p>Music Bus:<br>
                     Envision a music studio space on a bus that can 
                     arrive at the child’s home, school or wherever is 
@@ -85,7 +90,8 @@
                     will be exciting, fun, comfortable, and safe for kids. 
                     The bus drives to the planned location and stays parked 
                     during the lesson. The bus will not transport students.</p>
-            </section>
+                    </div>
+                </section>
             <section id="pricingSection" class="sections">
                 <h3>Pricing</h3>
                 <p>New student lessons Four Pack, 1 hour lessons for $140
@@ -153,6 +159,15 @@
             window.onclick = function(event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
+                }
+            }
+
+            function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
                 }
             }
         </script>
