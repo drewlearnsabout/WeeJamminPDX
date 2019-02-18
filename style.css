@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    transition-timing-function: ease-out;
 }
 
 body {
@@ -33,13 +32,14 @@ body {
     padding-top: 0.7em;
     font-family: 'Josefin Slab', serif;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: lighter;
     text-shadow: 2px 2px 2px rgb(0, 0, 0), 2px 2px 5px rgb(255, 255, 255);
     text-decoration: none;
     color: white;
 }
 
 .navButtons:hover {
+    font-weight: bold;
     animation-name: buttonFade;
     animation-duration: 0.5s;
 }
@@ -236,11 +236,20 @@ header h1 {
 }
 
 #formButton {
+    color: white;
+    padding-right: 1em;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1em;
+    background: rgb(150, 150, 150);
     position: fixed;
     display: grid;
-    width: 100vw;
-    bottom: 0;
+    width: 30vw;
+    text-align: center;
+    bottom: 35;
     z-index: 12;
+    opacity: 1;
+    border-radius: 0 1em 1em 0;
+    box-shadow: 1px 1px 3px rgb(255, 255, 255), 3px 3px 3px black;
 }
 
 .picGrids {
@@ -325,12 +334,6 @@ header h1 {
     cursor: pointer;
 }
 
-
-/* The hamburger icon is not displayed correctly, there's something wrong with either the class or the img class
-    it won't hide with how 23 schools explains it...
-*/
-
-
 @media (max-width: 720px) {
     #navbar {
         grid-template-columns: 1fr;
@@ -381,6 +384,10 @@ header h1 {
         grid-template-columns: 1fr;
     }
 
+    #formButton {
+        width: 50vw;
+    }
+
     .topnav.responsive {
         position: relative;
     }
@@ -401,7 +408,6 @@ header h1 {
 }
 
 /* Set up keyframes for picture animations */
-
 @keyframes slideRight {
     0% {
         right: 150;

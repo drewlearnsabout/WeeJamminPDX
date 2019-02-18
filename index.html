@@ -148,9 +148,9 @@
             <div id="bottomFooter">Wee Jammin' Music Lessons</div>
         </footer>
 
-        <button id="formButton">
-            <p>Signing up or contacting us? Click here!</p>
-        </button>
+        <div id="formButton">
+            <p>Wanna sign up or contact us? Click here!</p>
+        </div>
 
         <div id="formSection">
 
@@ -184,14 +184,24 @@
                 }
             }
 
-            /*
+                    /* 
             window.onscroll = function() {scrollFunction()};
 
             function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("formButton").className = "---NAME OF DIV---";
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("formButton").className = "slideUp";
             } else {
                 document.getElementById("formButton").className = "";
+                }
+            }
+
+            window.onscroll = function() {unscrollFunction()};
+            
+            function unscrollFunction() {
+            if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+                document.getElementById("formButton").className = "";
+                } else {
+                    document.getElementById("formButton").className = "slideUp";
                 }
             }
             */
