@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 body {
@@ -247,7 +247,7 @@ header h1 {
     text-align: center;
     bottom: 35;
     z-index: 12;
-    opacity: 1;
+    opacity: 0;
     border-radius: 0 1em 1em 0;
     box-shadow: 1px 1px 3px rgb(255, 255, 255), 3px 3px 3px black;
 }
@@ -334,6 +334,13 @@ header h1 {
     cursor: pointer;
 }
 
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
 @media (max-width: 720px) {
     #navbar {
         grid-template-columns: 1fr;
@@ -408,6 +415,17 @@ header h1 {
 }
 
 /* Set up keyframes for picture animations */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes slideRight {
     0% {
         right: 150;
