@@ -193,6 +193,14 @@
             document.getElementById("formButton").className = "";
                 }
             }
+            window.onscroll = function() {unscrollFunction()};
+            function unscrollFunction() {
+            if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+            document.getElementById("formButton").className = "";
+            } else {
+            document.getElementById("formButton").className = "slideUp";
+                }
+            }
         </script>
     </body>
 </html>
