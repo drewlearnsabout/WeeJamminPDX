@@ -69,7 +69,7 @@ header {
 
 #slide1, #slide2, #slide3, #slide4 {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ header h1 {
 }
 
 #aboutSection p {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #aboutSection h3 {
@@ -151,10 +151,9 @@ header h1 {
 
 #resourcesSection {
     color: white;
-    font-weight: bold;
     background: linear-gradient(0deg, rgba(2,170,176,1) 0%, rgba(0,205,172,1) 100%);
     font-size: 2em;
-    padding: 3em 0em 3em 0em;
+    padding: 5em 0em 5em 0em;
 }
 
 #resourcesSection h3 {
@@ -178,7 +177,7 @@ header h1 {
     color: white;
     background: linear-gradient(180deg, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 100%);
     margin: 4em 0 4em 0;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #comingSoonSection h3 {
@@ -193,18 +192,17 @@ header h1 {
     color: white;
     margin: 4em 0 4em 0;
     padding: 2em 0 2em 0;
-    font-weight: bold;
     font-size: 1em;
     background: linear-gradient(0deg, rgba(151,150,240,1) 0%, rgba(251,199,212,1) 100%);
 }
 
 #pricingSection h3 {
     color: black;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #pricingSection p {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 #contactSection {
@@ -258,7 +256,10 @@ header h1 {
     width: 3em;
 }
 
-
+#formButton img:hover {
+    transform: scale(1.2, 1.2) translate(3px, 0);
+    transition-duration: 0.5s;
+}
 
 .picGrids {
     margin: 4em 0 4em 0;
@@ -274,6 +275,20 @@ header h1 {
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+}
+
+@supports not (display: grid) {
+    .picGrids {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+#pic1, #pic2, #pic3, #pic4 {
+    width: 50vw;
+}
+
 }
 
 .picGrids img {
@@ -343,7 +358,8 @@ header h1 {
 
 .close {
     color: white;
-    font-size: 2em;
+    font-size: 4em;
+    padding-bottom: 1em;
 }
 
 .close:hover, .close:focus {
@@ -392,16 +408,35 @@ header h1 {
         font-size: 0.2em;
     }
 
+    #aboutSection p {
+        font-size: 1.2em;
+    }
+
     #resourcesSection {
         padding: 3em 1em 3em 1em;
+        font-size: 1.3em;
     }
 
     #reviewSection {
         padding: 1em 2em 0 2em;
+        font-size: 1em;
     }
 
     #pricingSection {
         padding: 2em 1.5em 2em 1.5em;
+        font-size: 1em;
+    }
+
+    #pricingSection h3 {
+        font-size: 1.4em;
+    }
+    
+    #pricingSection p {
+        font-size: 1.2em;
+    }
+
+    #comingSoonSection {
+        font-size: 1.2em;
     }
 
     #contactSection {
@@ -409,7 +444,7 @@ header h1 {
     }
 
     #formButton {
-        width: 7vw;
+        width: 10vw;
     }
 
     #formButton img {
