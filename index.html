@@ -151,10 +151,27 @@
         <div id="formButton" alt="Icon for contact and sign form">
             <img src="form button.png">
         </div>
+        
 
-        <div id="formSection">
 
-        </div>
+        <form id="formSection">
+            <input class="contactMe" id="name" type="text" placeholder="Parent/Guardian Name" required>
+            <input class="contactMe" id="email" type="email" placeholder="Email" required>
+            <input class="contactMe" id="phoneNumber" type="text" placeholder="Phone Number" required>
+            <p>Do you prefer to be contacted by phone or email?</p>
+            <select name="emailPhone" id="emailPhone">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+            <input class="contactMe" id="childName" type="text" placeholder="Child's Name" required>
+            <input class="contactMe" id="childBirthday" type="text" placeholder="Child's Birthday" required>
+            <p>Do you prefer lessons to take place in your home, Aim High Impact or Backbeat Music Academy?</p>
+            
+            <textarea class="contactMe" id="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
+            <button class="contactMe" id="submit" type="submit">Submit</button> 
+        </form>
+
+
 
         <script>
             var modal = document.getElementById('myModal');
