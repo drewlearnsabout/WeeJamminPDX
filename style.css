@@ -267,6 +267,10 @@ header h1 {
     transform: scale(1.2);
 }
 
+#formSection p span {
+    font-size: 0.8em;
+}
+
 /*
 .picGrids {
     margin: 4em 0 4em 0;
@@ -377,7 +381,7 @@ header h1 {
 
 .slideUp {
     animation-name: slideUp;
-    animation-duration: 0.7s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
     visibility: visible;
 }
@@ -484,6 +488,10 @@ header h1 {
     0% {
         opacity: 0;
         transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(5px)
+        scaleX(1.1);
     }
     100% {
         opacity: 1;

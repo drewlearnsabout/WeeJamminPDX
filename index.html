@@ -152,8 +152,6 @@
             <img src="form button.png">
         </div>
         
-
-
         <form id="formSection">
             <input class="contactMe" id="name" type="text" placeholder="Parent/Guardian Name" required>
             <input class="contactMe" id="email" type="email" placeholder="Email" required>
@@ -165,13 +163,25 @@
             </select>
             <input class="contactMe" id="childName" type="text" placeholder="Child's Name" required>
             <input class="contactMe" id="childBirthday" type="text" placeholder="Child's Birthday" required>
-            <p>Do you prefer lessons to take place in your home, Aim High Impact or Backbeat Music Academy?</p>
-            
-            <textarea class="contactMe" id="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
+            <p>Do you prefer lessons to take place in your home, Aim High Impact or Backbeat Music Academy?
+                <br><span>(small group lessons at Young Learners Preschool and Backbeat Music Academy to start in April `19)</span>
+            </p>
+            <select name="locations" id="locations">
+                <option value="home">Home</option>
+                <option value="aimhigh">Aim High Impact</option>
+                <option value="backbeat">Backbeat Music Academy</option>
+            </select>
+            <p>What days and times are open availability for your child’s music lessons?</p>
+            <input class="contactMe" id="availability" type="text" placeholder="Availability">
+            <p>Do you give me permission to take a few photos of your child playing instruments for the facebook/instagram page?
+                <br><span>(Child’s name/age/diagnosis will be kept private)</span></p>
+            <select name="permission" id="permission">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <textarea class="contactMe" id="comments" placeholder="Any comments or questions?" rows="2" cols="19"></textarea>
             <button class="contactMe" id="submit" type="submit">Submit</button> 
         </form>
-
-
 
         <script>
             var modal = document.getElementById('myModal');
