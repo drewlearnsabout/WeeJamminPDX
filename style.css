@@ -430,6 +430,7 @@ header h1 {
     top: 70;
     left: 280;
     overflow-y: scroll;
+    border: 1px solid rgb(255, 255, 255);
     background: linear-gradient(170deg, rgba(151,150,240,1) 0%, rgba(251,199,212,1) 100%);
     animation-name: fadeIn;
     animation-duration: 0.5s;
@@ -536,6 +537,9 @@ header h1 {
         animation-name: slideRight;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
+    }
+    .modal2 {
+        left: 55;
     }
 }
 
