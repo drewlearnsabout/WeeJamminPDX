@@ -12,10 +12,10 @@
             <a id="reviews" class="navButtons" href="#reviewSection">Reviews</a>
             <a id="comingSoon" class="navButtons" href="#comingSoonSection">Coming Soon</a>
             <a id="pricing" class="navButtons" href="#pricingSection">Pricing</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="hamburger button.png" class="icon"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="hamburger button.png" class="icon" alt="Navigation Button"></a>
         </nav>        
         <header id="header">
-            <img id="logo" src="Logo.png">
+            <img id="logo" src="Logo.png" alt="Wee Jammin Logo">
             <h1>Wee Jammin'<br>
                 <span id="secondRow">Music Lessons</span><br>
                 <span id="thirdRow">A nontraditional approach to teaching kids music</span>
@@ -38,10 +38,10 @@
                 </div>
             </section>
             <section id="picGrid1" class="picGrids">
-                <img id="pic1" src="grid pic 1.jpeg">
-                <img id="pic2" src="grid pic 2.jpg">
-                <img id="pic3" src="grid pic 3.jpg">
-                <img id="pic4" src="grid pic 4.jpeg">
+                <img id="pic1" src="grid pic 1.jpeg" alt="#">
+                <img id="pic2" src="grid pic 2.jpg" alt="#">
+                <img id="pic3" src="grid pic 3.jpg" alt="#">
+                <img id="pic4" src="grid pic 4.jpeg" alt="#">
             </section>
             <section id="resourcesSection" class="sections">
                 <h3>Benefits of Music</h3>
@@ -60,10 +60,10 @@
                     <button id="myBtn" class="buttons">More resources</button>
             </section>
             <section id="picGrid2" class="picGrids">
-                <img id="pic5" src="grid pic 5.jpeg">
-                <img id="pic6" src="grid pic 6.jpeg">
-                <img id="pic7" src="grid pic 7.jpeg">
-                <img id="pic8" src="grid pic 8.jpeg">
+                <img id="pic5" src="grid pic 5.jpeg" alt="#">
+                <img id="pic6" src="grid pic 6.jpeg" alt="#">
+                <img id="pic7" src="grid pic 7.jpeg" alt="#">
+                <img id="pic8" src="grid pic 8.jpeg" alt="#">
             </section>
             <section id="comingSoonSection" class="sections">
                     <h3>What's Coming Soon!</h3>
@@ -141,28 +141,31 @@
                 </div>
                 <div>
                     <p>Like, share, follow on:</p>
-                    <a href="#"><img src="001-facebook.png"></a>
-                    <a href="#"><img src="002-instagram.png"></a>
+                    <a href="#"><img src="001-facebook.png" alt="Facebook Icon"></a>
+                    <a href="#"><img src="002-instagram.png" alt="Instagram Icon"></a>
                 </div>
             </div>
             <div id="bottomFooter">Wee Jammin' Music Lessons</div>
         </footer>
 
         <div id="formButton" alt="Icon for contact and sign form">
-            <img src="form button.png">
+            <img src="form button.png" alt="Contact Form Button">
         </div>
         
-        <form id="formSection">
+        <form id="formSection" class="modal2">
+            <h3>Contact Form</h3>
+            <p>Please fill out this form if you are interested in your child taking music lessons.
+                <br>You may also email me this info at: <a href="weejamminpdx@gmail.com">weejamminpdx@gmail.com</a> </p>
             <input class="contactMe" id="name" type="text" placeholder="Parent/Guardian Name" required>
             <input class="contactMe" id="email" type="email" placeholder="Email" required>
             <input class="contactMe" id="phoneNumber" type="text" placeholder="Phone Number" required>
+            <input class="contactMe" id="childName" type="text" placeholder="Child's Name" required>
+            <input class="contactMe" id="childBirthday" type="text" placeholder="Child's Birthday" required>
             <p>Do you prefer to be contacted by phone or email?</p>
             <select name="emailPhone" id="emailPhone">
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
             </select>
-            <input class="contactMe" id="childName" type="text" placeholder="Child's Name" required>
-            <input class="contactMe" id="childBirthday" type="text" placeholder="Child's Birthday" required>
             <p>Do you prefer lessons to take place in your home, Aim High Impact or Backbeat Music Academy?
                 <br><span>(small group lessons at Young Learners Preschool and Backbeat Music Academy to start in April `19)</span>
             </p>
@@ -172,15 +175,16 @@
                 <option value="backbeat">Backbeat Music Academy</option>
             </select>
             <p>What days and times are open availability for your child’s music lessons?</p>
-            <input class="contactMe" id="availability" type="text" placeholder="Availability">
+            <input class="contactMe" id="availability" type="text" placeholder="Dates and Times">
             <p>Do you give me permission to take a few photos of your child playing instruments for the facebook/instagram page?
                 <br><span>(Child’s name/age/diagnosis will be kept private)</span></p>
             <select name="permission" id="permission">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
-            <textarea class="contactMe" id="comments" placeholder="Any comments or questions?" rows="2" cols="19"></textarea>
+            <textarea class="contactMe" id="comments" placeholder="Any comments or questions?" rows="4" cols="19"></textarea>
             <button class="contactMe" id="submit" type="submit">Submit</button> 
+            <span class="close">&times;</span>
         </form>
 
         <script>
@@ -199,6 +203,23 @@
             window.onclick = function(event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
+                }
+            }
+
+            var modal2 = document.getElementById('formSection');
+            var btn2 = document.getElementById('formButton');
+            var span2 = document.getElementsByClassName("close")[1];
+
+            btn2.onclick = function() {
+                modal2.style.display = "grid";
+            }
+
+            span2.onclick = function() {
+                modal2.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
                 }
             }
 
