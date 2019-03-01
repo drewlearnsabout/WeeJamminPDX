@@ -16,7 +16,7 @@ body {
     background: linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(87,87,87,0) 100%);
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     position: fixed;
     z-index: 7;
     overflow: hidden;
@@ -81,19 +81,23 @@ header {
 }
 
 #slide1 {
-    background-image: url("drums1.jpeg");
+    background-image: url("grid pic24.jpg");
+    background-position: center center;
     animation-name: fade;
 }
 #slide2 {
-    background-image: url("piano1.jpeg");
+    background-image: url("grid\ pic27.jpg");
+    background-position: center center;
     animation-name: fade2;
 }
 #slide3 {
-    background-image: url("drums2.jpeg");
+    background-image: url("grid pic23.jpg");
+    background-position: center center;
     animation-name: fade3;
 }
 #slide4 {
-    background-image: url("piano2.jpeg");
+    background-image: url("grid\ pic3.jpg");
+    background-position: center center;
     animation-name: fade4;
 }
 
@@ -129,7 +133,7 @@ header h1 {
 
 #aboutSection {
     color: white;
-    background: linear-gradient(0deg, rgba(204,43,94,1) 0%, rgba(117,58,136,1) 100%);
+    background: linear-gradient(180deg, rgba(54,0,51,1) 0%, rgba(11,135,147,1) 100%);
     margin: 4em 0 2em 0;
     padding: 15em 6em 16em 6em;
 }
@@ -149,9 +153,24 @@ header h1 {
     grid-gap: 1em 5em;
 }
 
+#about2Section {
+    background: linear-gradient(180deg, rgba(29,67,80,1) 0%, rgba(164,57,49,1) 100%);
+    padding: 3em 10em 3em 10em;
+    margin-bottom: 5em;
+}
+
+#about2Section h3 {
+    font-size: 2.5em;
+}
+
+#about2Section p {
+    font-size: 1.4em;
+    color: white;
+}
+
 #resourcesSection {
     color: white;
-    background: linear-gradient(0deg, rgba(2,170,176,1) 0%, rgba(0,205,172,1) 100%);
+    background: linear-gradient(180deg, rgba(0,70,127,1) 0%, rgba(165,204,130,1) 100%);
     font-size: 2em;
     padding: 5em 0em 6em 0em;
 }
@@ -161,21 +180,20 @@ header h1 {
 }
 
 #reviewSection {
-    padding: 1em 13em 0 13em;
-    height: 70vh;
-    color: white;
+    padding: 2em 13em 2em 13em;
+    height: 100vh;
+    color: black;
     font-size: 1.5em;
-    background: url("GuitarBackground.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    overflow-y: auto;
+    background: linear-gradient(180deg, rgba(192,72,72,1) 0%, rgba(72,0,72,1) 100%);
+}
+
+#reviewSection p {
+    color: white;
 }
 
 #comingSoonSection {
     color: white;
-    background: linear-gradient(180deg, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 100%);
+    background: linear-gradient(180deg, rgba(186,139,2,1) 0%, rgba(24,24,24,1) 100%);
     margin: 7em 0 7em 0;
     padding: 5em 1.5em 5em 1.5em;
     font-size: 1.8em;
@@ -193,8 +211,8 @@ header h1 {
     color: white;
     margin: 4em 0 4em 0;
     padding: 5em 0 7em 0;
-    font-size: 1em;
-    background: linear-gradient(0deg, rgba(151,150,240,1) 0%, rgba(251,199,212,1) 100%);
+    font-size: 1.4em;
+    background: linear-gradient(180deg, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
 }
 
 #pricingSection h3 {
@@ -210,7 +228,7 @@ header h1 {
     margin-top: 1.5em;
     padding: 1em 0 1em 0;
     font-size: 1.5em;
-    background: rgb(102, 102, 102);
+    background: linear-gradient(180deg, rgba(40,48,72,1) 0%, rgba(133,147,152,1) 100%);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -479,6 +497,11 @@ header h1 {
 
     #aboutSection p {
         font-size: 1.2em;
+    }
+
+    #about2Section {
+        font-size: 0.57em;
+        padding: 3em 5em 3em 5em;
     }
 
     #resourcesSection {
