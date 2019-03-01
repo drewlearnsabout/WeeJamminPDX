@@ -52,9 +52,9 @@ body {
 #comingSoon:hover {color: orange;}
 
 #logo {
-    margin-top: 5em; 
-    height: 14em;
-    width: 14em;
+    margin-top: 6em; 
+    height: 17em;
+    width: 17em;
     z-index: 5;
 }
 
@@ -462,6 +462,14 @@ header h1 {
 }
 
 @media (max-width: 720px) {
+
+    #logo {
+        margin-top: 6em; 
+        height: 14em;
+        width: 14em;
+        z-index: 5;
+    }
+
     #navbar {
         grid-template-columns: 1fr;
         overflow: visible;
