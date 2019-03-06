@@ -46,10 +46,12 @@ body {
 
 #home:hover { color: rgb(96, 96, 255);}
 #about:hover {color: yellow;}
+#about2:hover {color: rgb(0, 238, 255);}
 #resources:hover {color: red;}
 #reviews:hover {color: green;}
 #pricing:hover {color: rgb(199, 0, 199);}
 #comingSoon:hover {color: orange;}
+#contact:hover {color: rgb(255, 0, 140);}
 
 #logo {
     margin-top: 0; 
@@ -183,6 +185,7 @@ header img {
 
 #resourcesSection h3 {
     color: rgb(158, 158, 158);
+    font-size: 1.5em;
 }
 
 .modal {
@@ -257,13 +260,13 @@ header img {
     max-width: 250px;
     color: white;
     padding: 0.5em;
-    border-radius: 0 1em 1em 0;
+    border-radius: 0 1em 1em 1em;
 }
 
 .resourcePictures {
     height: 250px;
     width: 300px;
-    border-radius: 1em 1em 1em 0;
+    border-radius: 1em;
 }
 
 .resourcePictures:hover {
@@ -272,11 +275,16 @@ header img {
 }
 
 #reviewSection {
-    padding: 2em 13em 2em 13em;
+    padding: 10em 13em 10em 13em;
+    margin: 2em 0 2em 0;
     height: 100vh;
     color: black;
     font-size: 1.5em;
     background: linear-gradient(180deg, rgba(192,72,72,1) 0%, rgba(72,0,72,1) 100%);
+}
+
+#reviewSection h3 {
+    font-size: 2em;
 }
 
 #reviewSection p {
@@ -293,6 +301,7 @@ header img {
 
 #comingSoonSection h3 {
     color: rgb(158, 158, 158);
+    font-size: 1.8em;
 }
 
 .fontChange {
@@ -303,7 +312,7 @@ header img {
     color: white;
     margin: 4em 0 4em 0;
     padding: 5em 0 7em 0;
-    font-size: 1.4em;
+    font-size: 1.8em;
     background: linear-gradient(180deg, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
 }
 
@@ -341,6 +350,7 @@ header img {
 
 #locations {
     font-size: 0.8em;
+    margin-top: 1em;
 }
 
 #bottomFooter {
@@ -546,8 +556,6 @@ header img {
         padding: 3em 1em 3em 1em;
         font-size: 1.3em;
     }
-
-
 
     #moreResourcesSection {
         grid-template-columns: 1fr;
