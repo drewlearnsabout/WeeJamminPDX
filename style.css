@@ -83,22 +83,22 @@ header {
 }
 
 #slide1 {
-    background-image: url("grid pic24.jpg");
+    background-image: url("slide\ 1.jpg");
     background-position: center center;
     animation-name: fade;
 }
 #slide2 {
-    background-image: url("grid\ pic27.jpg");
+    background-image: url("slide\ 2.jpg");
     background-position: center center;
     animation-name: fade2;
 }
 #slide3 {
-    background-image: url("grid pic23.jpg");
+    background-image: url("slide\ 3.jpg");
     background-position: center center;
     animation-name: fade3;
 }
 #slide4 {
-    background-image: url("grid\ pic3.jpg");
+    background-image: url("slide\ 4.jpg");
     background-position: center center;
     animation-name: fade4;
 }
@@ -443,6 +443,24 @@ header img {
 
 #collage3 {
     background: url("Collage3.jpg");
+    background-size: cover;
+    height: 200vh;
+    width: 100vw;
+    margin: 3em 0 3em 0;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#collage4 {
+    background: url("Collage4.jpg");
+    background-size: cover;
+    height: 200vh;
+    width: 100vw;
+    margin: 3em 0 3em 0;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#collage5 {
+    background: url("Collage5.jpg");
     background-size: cover;
     height: 200vh;
     width: 100vw;
