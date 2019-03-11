@@ -275,11 +275,12 @@ header img {
 }
 
 #reviewSection {
-    padding: 10em 13em 10em 13em;
+    padding: 2em 8em 10em 8em;
     margin: 2em 0 2em 0;
     height: 100vh;
+    display: grid;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background: linear-gradient(180deg, rgba(192,72,72,1) 0%, rgba(72,0,72,1) 100%);
 }
 
@@ -290,6 +291,12 @@ header img {
 
 #reviewSection p {
     color: white;
+}
+
+#reviewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
 }
 
 #comingSoonSection {
