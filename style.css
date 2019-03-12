@@ -189,23 +189,20 @@ header img {
 }
 
 .modal {
-    padding: 2em;
     display: none;
     position: fixed;
     z-index: 11;
-    height: 70vh;
-    width: 65vw;
+    height: 75vh;
+    width: 75vw;
     top: 70;
-    left: 110;
+    left: 200;
     background: linear-gradient(150deg, rgba(18,194,233,1) 0%, rgba(196,113,237,1) 51%, rgba(246,79,89,1) 100%);
     overflow-y: scroll;
-    border: 2px solid orange;
+    justify-items: center;
 }
 
 .modal .close {
     color: black;
-    margin-top: 0.5em;
-    grid-column: 1 / 3;
 }
 .modal .close:hover {
     transform: scale(1.3) translate(0, 5px);
@@ -224,14 +221,8 @@ header img {
 }
 
 #moreResourcesSection {
-    margin: 0 5em 0 5em;
-    justify-items: center;
     animation-name: fadeIn;
     animation-duration: 1s;
-}
-
-#moreResourcesSection h3, #moreResourcesSection p {
-    grid-column: 1 / 3;
 }
 
 #moreResourcesSection h3 {
@@ -241,35 +232,39 @@ header img {
 #moreResourcesSection p {
     font-size: 1.5em;
     margin: -2em 0 0 0;
-}
-
-#resourceLinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 
 .articles {
     text-decoration: none;
     font-size: 0.7em;
-    text-align: center;
     font-family: 'Josefin Slab', serif;
 }
 
 .articles p {
-    max-width: 300px;
+    width: 300px;
     color: white;
-    padding: 0.5em;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 0.5em;
+    border-radius: 1em 0.5em 1em 1em;
 }
 
 .resourcePictures {
     height: 250px;
     width: 300px;
+    border-radius: 1em 0 0 0;
 }
 
 .resourcePictures:hover {
     filter: brightness(50%);
     transition-duration: 0.5s;
+}
+
+#resourceLinks {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em 4em;
 }
 
 #reviewSection {
@@ -614,11 +609,11 @@ header img {
     }
     
     #moreResourcesSection h3 {
-        font-size: 3.5em;
+        font-size: 1.8em;
     }
     
     #moreResourcesSection p {
-        font-size: 1.5em;
+        font-size: 1em;
         margin: -2em 0 0 0;
     }
     
@@ -628,20 +623,23 @@ header img {
     }
     
     .articles p {
-        position: absolute;
-        max-width: 400px;
+        width: 150px;
         color: white;
     }
     
     .resourcePictures {
-        height: 350px;
-        width: 400px;
-        border-radius: 1em 1em 0 0;
+        height: 120px;
+        width: 150px;
     }
     
     .resourcePictures:hover {
         filter: brightness(50%);
         transition-duration: 0.5s;
+    }
+
+    #resourceLinks {
+        grid-template-columns: 1fr;
+        grid-gap: 2.5em 1em;
     }
 
     #reviewSection {
@@ -700,6 +698,12 @@ header img {
         animation-name: slideRight;
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
+    }
+
+    .modal {
+        top: 120;
+        left: 40;
+        width: 80vw;
     }
     .modal2 {
         left: 55;
