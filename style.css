@@ -167,7 +167,7 @@ header img {
 }
 
 #about2Section h3 {
-    font-size: 2.5em;
+    font-size: 3em;
     color: white;
 }
 
@@ -403,7 +403,18 @@ header img {
 
 .contactMe {
     font-family: 'Josefin Slab', serif;
+}
 
+#submit {
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 0.2em;
+    padding: 0.3em;
+}
+
+#submit:hover {
+    cursor: pointer;
+    color: teal;
 }
 
 #formSection input {
@@ -496,7 +507,9 @@ header img {
 .modal2 .close {
     color: black;
     font-size: 4em;
-    padding-bottom: 1em;
+    position: fixed;
+    right: 320;
+    transform: translateY(-0.5em);
 }
 
 .modal2 .close:hover, .modal2 .close:focus {
@@ -610,6 +623,10 @@ header img {
         padding: 3em 5em 3em 5em;
     }
 
+    #about2Section h3 {
+        font-size: 4em;
+    }
+
     #resourcesSection {
         padding: 3em 1em 3em 1em;
         font-size: 1.3em;
@@ -677,7 +694,7 @@ header img {
     }
 
     #pricingSection h3 {
-        font-size: 1.4em;
+        font-size: 2.5em;
     }
     
     #pricingSection p {
@@ -731,6 +748,10 @@ header img {
     }
     .modal2 {
         left: 55;
+    }
+    
+    .modal2 .close {
+        transform: translate(3.6em, -0.6em);
     }
 }
 
