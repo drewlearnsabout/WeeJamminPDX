@@ -412,11 +412,14 @@ header img {
 
 #formSection h3 {
     font-weight: lighter;
-    font-size: 1.8em;
+    font-size: 3em;
 }
 
 #formSection p {
     padding: 0 10em 0 10em;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 #formSection p span {
@@ -686,6 +689,7 @@ header img {
 
     #formSection p {
         padding: 0;
+        font-size: 1em;
     }
 
     #formButton {
