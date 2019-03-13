@@ -255,6 +255,7 @@ header img {
     height: 250px;
     width: 300px;
     border-radius: 1em 0 0 0;
+    padding-bottom: 0.3em;
 }
 
 .resourcePictures:hover {
@@ -521,6 +522,10 @@ header img {
     background: linear-gradient(180deg, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
     animation-name: fadeIn;
     animation-duration: 0.5s;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .slideUp {
