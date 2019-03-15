@@ -88,7 +88,7 @@ header {
     animation-name: fade;
 }
 #slide2 {
-    background-image: url("slide\ 2.jpg");
+    background-image: url("slide\ 2.jpeg");
     background-position: center center;
     animation-name: fade2;
 }
@@ -196,7 +196,7 @@ header img {
     width: 75vw;
     top: 70;
     left: 200;
-    background: linear-gradient(180deg, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
+    background: linear-gradient(180deg, rgba(215,210,204,1) 0%, rgba(48,67,82,1) 100%);
     border: 1px solid white;
     overflow-y: scroll;
     justify-items: center;
@@ -532,7 +532,7 @@ header img {
     overflow-y: scroll;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 2px rgb(73, 71, 71);
-    background: linear-gradient(180deg, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%);
+    background: linear-gradient(180deg, rgba(215,210,204,1) 0%, rgba(48,67,82,1) 100%);
     animation-name: fadeIn;
     animation-duration: 0.5s;
 }
@@ -681,7 +681,7 @@ header img {
     #reviewSection {
         padding: 1em 2em 4em 2em;
         font-size: 1em;
-        height: 142vh;
+        height: 158vh;
     }
 
     #reviewGrid {
