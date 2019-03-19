@@ -1,14 +1,12 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0 auto;
     background: white;
     font-family: 'Fredericka the Great', cursive;
     overflow-x: hidden;
 }
-
 #navbar {
     width: 100vw;
     height: 8vh;
@@ -21,13 +19,11 @@ body {
     z-index: 7;
     overflow: hidden;
 }
-
 #navbar img {
     height: 2em;
     width: 2em;
     display: none;
 }
-
 .navButtons {
     padding-top: 0.7em;
     font-family: 'Josefin Slab', serif;
@@ -37,7 +33,6 @@ body {
     text-decoration: none;
     color: white;
 }
-
 .navButtons:hover {
     font-weight: bold;
     animation-name: buttonFade;
@@ -59,7 +54,6 @@ body {
     width: 3.5em;
     z-index: 5;
 }
-
 header {
     width: 100vw;
     height: 100vh;
@@ -68,7 +62,6 @@ header {
     overflow: hidden;
     box-shadow: 5px 5px 5px gray;
 }
-
 #slide1, #slide2, #slide3, #slide4 {
     position: absolute;
     height: 100vh;
@@ -79,9 +72,7 @@ header {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     z-index: 1;
-    
 }
-
 #slide1 {
     background-image: url("slide\ 1.jpg");
     background-position: center center;
@@ -102,7 +93,6 @@ header {
     background-position: center center;
     animation-name: fade4;
 }
-
 header h1 {
     margin-top: 1em;
     color: rgb(255, 255, 255);
@@ -113,81 +103,66 @@ header h1 {
     font-size: 4.7em;
     z-index: 5;
 }
-
 header img {
     padding: 0.4em 0 0.2em 0;
 }
-
 #secondRow {
     font-size: 0.7em;
 }
-
 #thirdRow {
     font-size: 0.3em;
 }
-
 #blockSection h3 {
     font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
 }
-
 .sections {
     padding: 1.5em;
     text-align: center;
     font-family: 'Josefin Slab', serif;
     box-shadow: 5px 5px 5px gray;
 }
-
 #aboutSection {
     color: white;
     background: linear-gradient(180deg, rgba(54,0,51,1) 0%, rgba(11,135,147,1) 100%);
     margin: 4em 0 2em 0;
     padding: 15em 6em 16em 6em;
 }
-
 #aboutSection p {
     font-size: 1.8em;
 }
-
 #aboutSection h3 {
     color: white;
     font-size: 3em;
 }
-
 .twoParts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em 5em;
 }
-
 #about2Section {
     background: linear-gradient(180deg, rgba(29,67,80,1) 0%, rgba(164,57,49,1) 100%);
     padding: 3em 10em 3em 10em;
     margin-bottom: 5em;
 }
-
 #about2Section h3 {
     font-size: 3em;
     color: white;
 }
-
 #about2Section p {
     font-size: 1.4em;
     color: white;
 }
-
 #resourcesSection {
     color: white;
     background: linear-gradient(180deg, rgba(0,70,127,1) 0%, rgba(165,204,130,1) 100%);
     font-size: 2em;
     padding: 5em 0em 6em 0em;
 }
-
 #resourcesSection h3 {
     color: white;
     font-size: 1.5em;
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -202,47 +177,43 @@ header img {
     justify-items: center;
     box-shadow: 2px 2px 2px rgb(36, 35, 35);
 }
-
 .modal .close {
     color: black;
+    position: fixed;
+    right: 200;
+    transform: translateY(-0.1em);
 }
 .modal .close:hover {
     transform: scale(1.3) translate(0, 5px);
     transition-duration: 0.3s;
 }
-
 .close {
     color: white;
     font-size: 4em;
     padding-bottom: 1em;
 }
-
 .close:hover, .close:focus {
     color: gold;
     cursor: pointer;
 }
-
 #moreResourcesSection {
     animation-name: fadeIn;
     animation-duration: 1s;
 }
-
 #moreResourcesSection h3 {
     font-size: 3.5em;
 }
-
 #moreResourcesSection p {
     font-size: 1.5em;
     margin: -2em 0 0 0;
     text-align: center;
 }
-
 .articles {
     text-decoration: none;
     font-size: 0.7em;
     font-family: 'Josefin Slab', serif;
+    margin-bottom: 2em;
 }
-
 .articles p {
     width: 300px;
     color: white;
@@ -250,26 +221,22 @@ header img {
     padding-bottom: 0.5em;
     border-radius: 1em 0.5em 1em 1em;
 }
-
 .resourcePictures {
     height: 250px;
     width: 300px;
     border-radius: 1em 0 0 0;
     padding-bottom: 0.3em;
 }
-
 .resourcePictures:hover {
     filter: brightness(50%);
     transition-duration: 0.5s;
 }
-
 #resourceLinks {
     margin-top: 5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4em 4em;
 }
-
 #reviewSection {
     padding: 2em 8em 10em 8em;
     margin: 2em 0 2em 0;
@@ -279,22 +246,18 @@ header img {
     background: linear-gradient(180deg, rgba(192,72,72,1) 0%, rgba(72,0,72,1) 100%);
     background-size: 100% 100%;
 }
-
 #reviewSection h3 {
     font-size: 2em;
     color: white;
 }
-
 #reviewSection p {
     color: white;
 }
-
 #reviewGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3em;
 }
-
 #comingSoonSection {
     color: white;
     background: linear-gradient(180deg, rgba(211,131,18,1) 0%, rgba(168,50,121,1) 100%);
@@ -302,16 +265,13 @@ header img {
     padding: 5em 1.5em 5em 1.5em;
     font-size: 1.8em;
 }
-
 #comingSoonSection h3 {
     color: white;
     font-size: 1.8em;
 }
-
 .fontChange {
     font-family: 'Fredericka the Great', cursive;
 }
-
 #pricingSection {
     color: white;
     margin: 4em 0 4em 0;
@@ -319,20 +279,16 @@ header img {
     font-size: 1.8em;
     background: linear-gradient(180deg, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
 }
-
 #pricingSection h3 {
     color: white;
     font-size: 1.8em;
 }
-
 #pricingSection p {
     font-size: 1.6em;
 }
-
 .bold {
     font-weight: bold;
 }
-
 #contactSection {
     margin-top: 1.5em;
     padding: 1em 0 1em 0;
@@ -343,31 +299,26 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
-
 #contactSection img {
     height: 1.8em;
     background: white;
     border-radius: 1em;
 }
-
 #contactSection img:hover {
     transition-duration: 0.4s;
     transform: scale(1.2);
     background: linear-gradient(170deg, rgba(18,194,233,1) 0%, rgba(196,113,237,1) 50%, rgba(247,121,125,1) 100%);
 }
-
 #locations {
     font-size: 0.8em;
     margin-top: 1em;
 }
-
 #bottomFooter {
     color: white;
     padding: 0.5em 0 0.5em 0;
     background: rgb(61, 61, 61);
     text-align: center;
 }
-
 #formButton {
     padding: 1em;
     color: white;
@@ -385,65 +336,53 @@ header img {
     border-radius: 0 1em 1em 0;
     box-shadow: 1px 1px 3px rgb(255, 255, 255), 3px 3px 3px black;
 }
-
 #formButton:hover {
     box-shadow: 1px 1px 3px rgb(255, 255, 255), 4px 4px 4px black;
     transition-duration: 0.3s;
     cursor: pointer;
 }
-
 #formButton img {
     height: 3em;
     width: 2.5em;
 }
-
 #formButton img:hover {
     transition-duration: 0.3s;
     transform: scale(1.2);
 }
-
 .contactMe {
     font-family: 'Josefin Slab', serif;
 }
-
 #submit {
     font-size: 2em;
     font-weight: bold;
     border-radius: 0.2em;
     padding: 0.3em;
 }
-
 #submit:hover {
     cursor: pointer;
     color: teal;
 }
-
 #formSection input {
     padding: 0.2em;
     border-radius: 0.5em;
 }
-
 #formSection h3 {
     font-weight: lighter;
     font-size: 3em;
 }
-
 #formSection p {
     padding: 0 10em 0 10em;
     font-family: 'Josefin Slab', serif;
     font-size: 1.3em;
     font-weight: bold;
 }
-
 #formSection p span {
     font-size: 0.8em;
 }
-
 #comments {
     height: 4em;
     border-radius: 1em;
 }
-
 #collage1 {
     background: url("Collage1.jpg");
     background-size: 100% 100%;
@@ -452,7 +391,6 @@ header img {
     margin: 3em 0 3em 0;
     box-shadow: 5px 5px 5px gray;
 }
-
 #collage2 {
     background: url("Collage2.jpg");
     background-size: 100% 100%;   
@@ -461,7 +399,6 @@ header img {
     margin: 3em 0 3em 0;
     box-shadow: 5px 5px 5px gray;
 }
-
 #collage3 {
     background: url("Collage3.jpg");
     background-size: 100% 100%;
@@ -470,7 +407,6 @@ header img {
     margin: 3em 0 3em 0;
     box-shadow: 5px 5px 5px gray;
 }
-
 #collage4 {
     background: url("Collage4.jpg");
     background-size: 100% 100%;
@@ -479,7 +415,6 @@ header img {
     margin: 3em 0 3em 0;
     box-shadow: 5px 5px 5px gray;
 }
-
 #collage5 {
     background: url("Collage5.jpg");
     background-size: 100% 100%;
@@ -488,7 +423,6 @@ header img {
     margin: 3em 0 3em 0;
     box-shadow: 5px 5px 5px gray;
 }
-
 .buttons {
     padding: 0.4em;
     color: white;
@@ -499,12 +433,10 @@ header img {
     background: linear-gradient(150deg, rgba(55,59,68,1) 0%, rgba(66,134,244,1) 100%);
     cursor: pointer;
 }
-
 .buttons:hover {
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
-
 .modal2 .close {
     color: black;
     font-size: 4em;
@@ -512,12 +444,10 @@ header img {
     right: 320;
     transform: translateY(-0.5em);
 }
-
 .modal2 .close:hover, .modal2 .close:focus {
     color: rgb(45, 164, 168);
     cursor: pointer;
 }
-
 .modal2 {
     padding: 2em;
     display: none;
@@ -537,11 +467,9 @@ header img {
     animation-name: fadeIn;
     animation-duration: 0.5s;
 }
-
 ::-webkit-scrollbar { 
     display: none; 
 }
-
 .slideUp {
     animation-name: slideUp;
     animation-duration: 0.3s;
@@ -550,61 +478,47 @@ header img {
 }
 
 @media (max-width: 720px) {
-
     #logo { 
         height: 3.5em;
         width: 3.5em;
         z-index: 5;
     }
-
     #slide1, #slide2, #slide3, #slide4 {
         background-size: cover;
         height: 80vh;
     }
-
     #navbar {
         grid-template-columns: 1fr;
         overflow: visible;
     }
-
     .navButtons {
         font-size: 1.35em;
         display: none;
         background: rgba(0,0,0,0.5);
         width: 100vw;
     }
-
     #navbar img {
         display: initial;
     }
-
     .twoParts {
         grid-template-columns: 1fr;
     }
-
     header {
         height: 80vh;
     }
-    
     header h1 {
         font-size: 3.5em;
         margin-top: 2.5em; 
     }
-
     header img {
         padding: 0.5em 0 0.5em 0;
     }
-    
     #secondRow {
         font-size: 0.5em;
     }
-    
     #thirdRow {
         font-size: 0.3em;
     }
-
-
-
     #collage1 {
         background-size: 100% 100%;
         height: 60vh;
@@ -630,117 +544,92 @@ header img {
         height: 60vh;
         width: 100vw;
     }
-
     #aboutSection p {
         font-size: 1.2em;
     }
-
     #about2Section {
         font-size: 0.57em;
         padding: 3em 5em 3em 5em;
     }
-
     #about2Section h3 {
         font-size: 4em;
     }
-
     #resourcesSection {
         padding: 3em 1em 3em 1em;
         font-size: 1.3em;
     }
-
     #moreResourcesSection {
         grid-template-columns: 1fr;
     }
-    
     #moreResourcesSection h3, #moreResourcesSection p {
         grid-column: 1 / 2;
     }
-    
     #moreResourcesSection h3 {
         font-size: 4em;
     }
-    
     #moreResourcesSection p {
         font-size: 1.5em;
         margin: -2em 0 0 0;
     }
-
     #resourceInfo {
         padding: 0 3em 0 3em;
     }
-    
     .articles {
         text-decoration: none;
         font-size: 0.8em;
         padding: 0.5em 0 0.5em 0;
     }
-    
     .articles p {
         width: 200px;
         color: white;
     }
-    
     .resourcePictures {
         height: 120px;
         width: 200px;
     }
-    
     .resourcePictures:hover {
         filter: brightness(50%);
         transition-duration: 0.5s;
     }
-
     #resourceLinks {
         grid-template-columns: 1fr;
         grid-gap: 2.5em 1em;
     }
-
     #reviewSection {
         padding: 1em 2em 4em 2em;
         font-size: 1em;
         height: 158vh;
     }
-
     #reviewGrid {
         grid-template-columns: 1fr;
     }
-
     #pricingSection {
         padding: 2em 1.5em 2em 1.5em;
         font-size: 1em;
     }
-
     #pricingSection h3 {
         font-size: 2.5em;
     }
-    
     #pricingSection p {
         font-size: 1.2em;
     }
-
     #comingSoonSection {
         font-size: 1.2em;
     }
-
     #contactSection {
         grid-template-columns: 1fr;
     }
-
     #formSection p {
         padding: 0;
         font-size: 1em;
     }
-
     #formButton {
         width: 8vw;
     }
-
     #formButton img {
         height: 3.5em;
         width: 3em;
     }
-
     .topnav.responsive {
         position: relative;
     }
@@ -758,7 +647,6 @@ header img {
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
     }
-
     .modal {
         top: 100;
         left: 40;
@@ -767,13 +655,15 @@ header img {
     .modal2 {
         left: 55;
     }
-    
+    .modal .close {
+        right: 100;
+        transform: translateY(-0.1em);
+    }
     .modal2 .close {
-        transform: translate(3.6em, -0.6em);
+        transform: translate(2.9em, -0.6em);
     }
 }
 
-/* Set up keyframes for picture animations */
 @keyframes slideUp {
     0% {
         opacity: 0;
@@ -804,27 +694,21 @@ header img {
     0% {
         transform: translate(0, 0);
     }
-
     25% {
         transform: translate(0, -8px);
     }
-
     50% {
         transform: translate(0, 0);
     }
-
     60% {
         transform: translate(0, -2px);
     }
-
     70% {
         transform: translate(0, 0);
     }
-
     80% {
         transform: translate(0, -1px);
     }
-
     100% {
         transform: translate(0, 0);
     }
