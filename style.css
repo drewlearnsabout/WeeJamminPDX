@@ -73,7 +73,7 @@ header {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-size: cover;
+    background-size: 100% 130%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     animation-duration: 20s;
@@ -347,7 +347,7 @@ header img {
 #contactSection img {
     height: 1.8em;
     background: white;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 #contactSection img:hover {
@@ -557,6 +557,11 @@ header img {
         z-index: 5;
     }
 
+    #slide1, #slide2, #slide3, #slide4 {
+        background-size: cover;
+        height: 80vh;
+    }
+
     #navbar {
         grid-template-columns: 1fr;
         overflow: visible;
@@ -576,6 +581,10 @@ header img {
     .twoParts {
         grid-template-columns: 1fr;
     }
+
+    header {
+        height: 80vh;
+    }
     
     header h1 {
         font-size: 3.5em;
@@ -593,6 +602,8 @@ header img {
     #thirdRow {
         font-size: 0.3em;
     }
+
+
 
     #collage1 {
         background-size: 100% 100%;
@@ -647,11 +658,11 @@ header img {
     }
     
     #moreResourcesSection h3 {
-        font-size: 1.8em;
+        font-size: 4em;
     }
     
     #moreResourcesSection p {
-        font-size: 1em;
+        font-size: 1.5em;
         margin: -2em 0 0 0;
     }
 
@@ -662,16 +673,17 @@ header img {
     .articles {
         text-decoration: none;
         font-size: 0.8em;
+        padding: 0.5em 0 0.5em 0;
     }
     
     .articles p {
-        width: 150px;
+        width: 200px;
         color: white;
     }
     
     .resourcePictures {
         height: 120px;
-        width: 150px;
+        width: 200px;
     }
     
     .resourcePictures:hover {
