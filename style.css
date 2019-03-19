@@ -441,7 +441,7 @@ header img {
     color: black;
     font-size: 4em;
     position: fixed;
-    right: 320;
+    right: 250;
     transform: translateY(-0.5em);
 }
 .modal2 .close:hover, .modal2 .close:focus {
@@ -660,7 +660,7 @@ header img {
         transform: translateY(-0.1em);
     }
     .modal2 .close {
-        transform: translate(2.9em, -0.6em);
+        transform: translate(1.9em, -0.6em);
     }
 }
 
